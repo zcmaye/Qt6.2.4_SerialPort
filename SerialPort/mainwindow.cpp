@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
 #include <QSerialPortInfo>
@@ -25,7 +25,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::init()
 {
-
+    setWindowTitle("Qt串口助手");
     //设置改变
     connect(ui->baudRateCmb,&QComboBox::currentIndexChanged,this,[=]
     {
